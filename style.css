@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden;
+}
+/* ------------------------------------------------------------page-1 start---------------------------------------------------------------- */
+.container1{
+    width: 100%;
+    height: 100%;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-M>p{
+    position: relative;
+    cursor: pointer;
+}
+
+.content-M>p::before{
+    position: absolute;
+    content: "";
+    height: 10%;
+    width: 0%;
+    bottom: 0;
+    transform: translateY(5px);
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s all;
+}
+
+.content-M>p:hover::before{
+    width: 100%;
+}
+
+
+
+.location-icon{
+    color: red;
+    font-size: 2vmax;
+}
+
+.container1>nav>ul{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 5vmin 15vmax;
+}
+.container1>nav>ul>li{
+    list-style: none;
+    font-weight: 700;
+}
+
+nav>span{
+    display: none;
+    color: white;
+    font-size: 4vmax;
+    padding: 2vmax 3vmax;
+   
+}
+
+.content-M{
+    /* border: 2px white solid; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.content-M>h1{
+    font-size: 6vmax;
+}
+.content-M>p{
+    font-size: 1.5vmax;
+}
+
+.content-M{
+    height: 22vmin;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+.container1>.PB{
+    width: 5vmax;
+    height: 5vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    border: 3px white solid;
+    margin: auto;
+}
+
+.container1>.PB>i{
+    font-size: 3vmax;
+}
+
+
+
+
+
+@media (max-width: 600px){
+
+    .container1{
+        justify-content: space-around;
+    }
+
+    .container1>.content-M>h1{
+        font-size: 8vw;
+    }
+
+    .container1>.PB{
+        height: 10vmax;
+        width: 10vmax;
+    }
+
+    .container1>nav>ul{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: end;
+        /* border: 2px red solid; */
+
+    }
+    nav>span{
+        
+        display: inline;
+    }
+
+}
+/* <!-- --------------------------------------------------------page-1 END---------------------------------------------------------------- > */
+/* <!-- --------------------------------------------------------page-2 start------------------------------------------------------------ --> */
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: black;
+    /* border: 2px solid green; */
+}
+
+.content{
+    margin: auto;
+    text-align: center;
+    width: 50vmax;
+    padding-bottom: 3vmax;
+}
+
+.container2>.content>h1{
+    padding: 3vmin 2vmax;
+}
+
+.c>h3{
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+.c>p{
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.c{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 63vh;
+    width: 26vw;
+    padding: 0vmin 2vmax;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+}
+
+.c>.photo1{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-image: url(fj6xcr9e0efhjudkswzp_bc0d2157d501d4729a3d5631708a6b2e.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+.c>.photo2{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(photo-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+.c>.photo3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(photo-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.c:hover .photo1,.c:hover .photo2,.c:hover .photo3{
+    transform: scale(1.1);
+}
+
+.grid{
+    width: 85vmax;
+    height: auto;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.container2>button{
+    font-size: 2vmax;
+    margin: auto;
+    width: 25vmax;
+    color: skyblue;
+    background-color: transparent;
+    border: none;
+}
+
+@media (max-width: 600px){
+
+    
+
+    .container2>.content{
+        width: 90%;
+        height: auto;
+        padding: 0% 0%;
+    }
+    .container2>.content>h1 {
+        font-size: 4vmax;
+    }
+    .container2>.content>p {
+        text-align: justify;
+        font-size: 2vmax;
+        color: bisque;
+    }
+
+    .container2>.grid{
+        padding: 10vmin 2vmax;
+        width: 80%;
+        height: 200vmax;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container2>.grid>.c{
+        width: 40vmax;
+        height: 60vmax;
+    }
+
+}
+/* <!-- --------------------------------------------------------page-2 END---------------------------------------------------------------- > */
+/* <!-- --------------------------------------------------------page-3 start------------------------------------------------------------ --> */
+
+.container3{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container3>.content-top{
+    color: rgb(230, 230, 230);
+    margin: auto;
+    text-align: center;
+    width: 50vmax;
+}
+
+.container3>.content-top>h1{
+    font-size: 2vmax;
+    padding-bottom: 1vmax;
+    padding-top: 1vmax;
+ }
+
+.container3>.content-top>p{
+    line-height: 1.5vmax;
+    color: bisque;
+font-size: 1vmax;
+}
+.content-Left,.content-Right {
+    width: 48%;
+}
+
+.container3>.content-Center{
+    /* padding: 3vmax 0vmax; */
+    width: 75%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3>.content-Center>.content-Left>.Left-Top{
+    margin: auto;
+    width: 100%;
+    height: 18vmax;
+    background-image: url(Road.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.container3>.content-Center>.content-Right>.Right-Top{
+    margin: auto;
+    width: 100%;
+    height: 18vmax;
+    background-image: url(GGB.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.container3>.content-Center>.content-Left>.Left-Bottom{
+    text-align: center;
+}
+.container3>.content-Center>.content-Right>.Right-Bottom{
+    text-align: center;
+}
+
+.container3>.content-Center>.content-Left>.Left-Bottom>p{
+    padding: 1.5vmax 0vmax;
+    width: 100%;
+    color: bisque;
+    text-align: center;
+}
+
+.container3>.content-Center>.content-Right>.Right-Bottom>p{
+    padding: 1.5vmax 0vmax;
+    width: 100%;
+    color: bisque;
+    text-align: center;
+}
+
+/* .content-Center{
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+.container3>button{
+    font-size: 2vmax;
+    width: 90vmax;
+    color: skyblue;
+    background-color: transparent;
+    border: none;
+}
+
+
+@media (max-width: 600px){
+    .container3>.content-top{
+        width: 85%;
+    }
+
+    .container3>.content-top>h1{
+        font-size: 3vmax;
+    }
+
+    .container3>.content-top>p{
+        font-size: 1.8vmax;
+        color: bisque;
+        line-height: 2vmax;
+        text-align: justify;
+    }
+
+    .content-Center{
+        flex-direction: column;
+    }
+    .Right-Bottom{
+        width: 100%;
+    }
+    .Right-Bottom>h1{
+        width: 100%;
+        font-size: 3vmax;
+        padding: 0% 0%;
+    }
+    .Right-Bottom>p{
+        width: 100%;
+        color: bisque;
+        font-size: 1.5vmax;
+        padding: 0% 0%;
+    }
+    .content-Left,.content-Right {
+        width: 100%;
+    }
+}
+/* <!-- --------------------------------------------------------page-3 END---------------------------------------------------------------- > */
+/* <!-- --------------------------------------------------------page-4 start------------------------------------------------------------ --> */
+
+.container4{
+    height: 100%;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+}
+
+.container4>.topbtn>button{
+    padding: 5vmax 3vmax;
+    letter-spacing: 10px;
+    font-size: 2vmax;
+    width: 100%;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+}
+
+.bottom-Marking{
+    width: 55%;
+    height: 3vw;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-Marking>ul{
+    display: flex;
+    gap: 3vw;
+    list-style: none;
+}
+
+@media (max-width: 600px){
+
+    .container4{
+        /* height: 120%; */
+        justify-content: space-between;
+        padding-bottom: 20%;
+    }
+    .container4>.topbtn>button{
+        width: 100%;
+        font-size: 4vmax;
+        letter-spacing: 10px;
+        color: rgb(218, 10, 10);
+        
+    }
+
+    .container4>.bottom-Marking>p{
+        width: 70%;
+        text-align: center;
+        word-spacing: 6px;
+        letter-spacing: 5px;
+        padding-bottom: 40px;
+    }
+
+    .container4>.bottom-Marking{
+        flex-direction: column;
+        padding-bottom: 5%;
+       /* border: 2px solid red; */
+
+    }
+    .container4>.bottom-Marking>span{
+        display: none;
+    }
+
+
+    .bottom-Marking{
+        width: 100%;
+        height: auto;
+    }
+
+/* <!-- --------------------------------------------------------page-4 END---------------------------------------------------------------- > */
+}
